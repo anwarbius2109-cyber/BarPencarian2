@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: #f6f2ff;
+  color: #2d1b4e;
+  line-height: 1.6;
+  font-family: "Urbanist", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Instrument Serif", serif;
+  font-weight: normal;
+}
+
+h1 {
+  color: #4b2e83;
+}
+
+/* PRIMARY (UNGU UTAMA) */
+.bg-primary {
+  background-color: #7b4bff;
+  color: #ffffff;
+}
+
+.hover\:bg-primary:hover {
+  background-color: #6936f5;
+}
+
+.hover\:text-primary:hover {
+  color: #7b4bff;
+}
+
+/* SECONDARY (UNGU MUDA / SOFT) */
+.bg-secondary {
+  background-color: #efe9ff;
+  color: #2d1b4e;
+}
+
+.hover\:bg-secondary:hover {
+  background-color: #ddd3ff;
+}
+
+.border-secondary {
+  border-color: #e4dbff;
+}
+
+/* CARD */
+.bg-card {
+  background-color: #ffffff;
+  color: #2d1b4e;
+  box-shadow: 0 10px 25px rgba(123, 75, 255, 0.15);
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #ffffff;
+  color: #2d1b4e;
+  box-shadow: 0 5px 15px rgba(123, 75, 255, 0.1);
+}
+
+/* GRADIENT TEXT */
+.text-gradient {
+  background-image: linear-gradient(45deg, #7b4bff, #b892ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SHAPE */
+.rounded {
+  border-radius: 0rem 0.8rem;
+}
+
+/* BUTTON */
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
