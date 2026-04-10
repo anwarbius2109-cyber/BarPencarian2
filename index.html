@@ -844,15 +844,19 @@ function renderThemes(data) {
   const container = document.getElementById("themes");
   const resultCount = document.getElementById("resultCount");
 
+  if (!container) return;
+
   container.innerHTML = "";
 
-  resultCount.textContent = data.length + " tema ditemukan";
+  if (resultCount) {
+    resultCount.textContent = data.length + " tema ditemukan";
+  }
 
   data.forEach(function(theme) {
     const card = document.createElement("div");
 
     card.innerHTML =
-      '<div class="bg-card rounded shadow-lg hover:shadow-2xl transition duration-300">' +
+      '<div class="bg-card rounded shadow-lg">' +
         '<div class="aspect-square overflow-hidden">' +
           '<img src="' + theme.featured_image + '" class="w-full h-full object-cover">' +
         '</div>' +
