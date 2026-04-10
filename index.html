@@ -947,6 +947,7 @@
     const categoriesContainer = document.getElementById("categories");
 
     try {
+      } catch (error) {
       const response = await fetch(categoryUrl);
       const result = await response.json();
       const categories = result.data || [];
